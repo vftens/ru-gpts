@@ -1,0 +1,33 @@
+"#!" ­Ґ пў«пҐвбп ў­гваҐ­­Ґ© Ё«Ё ў­Ґи­Ґ©
+Є®¬ ­¤®©, ЁбЇ®«­пҐ¬®© Їа®Ја ¬¬®© Ё«Ё Ї ЄҐв­л¬ д ©«®¬.
+2020-10-23 16:29:44.406488: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+Traceback (most recent call last):
+  File "generate_transformers.py", line 27, in <module>
+    from transformers import (
+  File "C:\G\1\anaconda3_2020\lib\site-packages\transformers\__init__.py", line 23, in <module>
+    from .configuration_albert import ALBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, AlbertConfig
+  File "C:\G\1\anaconda3_2020\lib\site-packages\transformers\configuration_albert.py", line 18, in <module>
+    from .configuration_utils import PretrainedConfig
+  File "C:\G\1\anaconda3_2020\lib\site-packages\transformers\configuration_utils.py", line 25, in <module>
+    from .file_utils import CONFIG_NAME, cached_path, hf_bucket_url, is_remote_url
+  File "C:\G\1\anaconda3_2020\lib\site-packages\transformers\file_utils.py", line 103, in <module>
+    from apex import amp  # noqa: F401
+  File "C:\G\1\anaconda3_2020\lib\site-packages\apex\__init__.py", line 18, in <module>
+    from apex.interfaces import (ApexImplementation,
+  File "C:\G\1\anaconda3_2020\lib\site-packages\apex\interfaces.py", line 10, in <module>
+    class ApexImplementation(object):
+  File "C:\G\1\anaconda3_2020\lib\site-packages\apex\interfaces.py", line 14, in ApexImplementation
+    implements(IApex)
+  File "C:\G\1\anaconda3_2020\lib\site-packages\zope\interface\declarations.py", line 706, in implements
+    raise TypeError(_ADVICE_ERROR % 'implementer')
+TypeError: Class advice impossible in Python3.  Use the @implementer class decorator instead.
+
+****
+‚ б«гз Ґ ®иЁЎЄЁ б apex
+```
+pip uninstall apex
+
+cd apex
+
+
+```
